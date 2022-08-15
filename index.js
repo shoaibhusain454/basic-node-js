@@ -6,8 +6,10 @@ const bodyParser = require("body-parser")
 const cors = require('cors');
 const rateLimit = require("express-rate-limit")
 const fileUpload = require("express-fileupload")
-const PORT = process.env.PORT || 3000;
-const dbURL = process.env.dbURL;
+// const PORT = process.env.PORT || 3000;
+const PORT = 3000;
+// const dbURL = process.env.dbURL;
+const dbURL = 'mongodb://127.0.0.1:27017/test';
 
 const morgan = require("morgan");
 const helmet = require("helmet");
